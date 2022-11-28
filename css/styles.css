@@ -139,6 +139,12 @@ img {
     margin-left: 50px;
 }
 
+.mail-icon {
+    
+    margin-right: 10px;
+    align-items: center;
+}
+
 .auth-nav{
 
     text-decoration: none;
@@ -156,6 +162,10 @@ img {
 .auth-nav:hover,
 .auth-nav:focus{
     color: var(--accent-color);
+}
+
+.mail-icon:hover{
+    fill: var(--accent-color);
 }
 
 /*Підвал*/
