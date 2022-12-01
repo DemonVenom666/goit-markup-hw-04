@@ -154,20 +154,22 @@ img {
 }
 
 .auth-nav:hover,
-.auth-nav:focus{
+.auth-nav:focus {
     color: var(--accent-color);
-}
-
-.icon{
-    border: 1px solid red;
-    margin-right: 10px;
-}
-
-.mail-icon:hover{
     fill: var(--accent-color);
 }
 
+.icon{
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: var(--secondary-color);
+}
 
+.auth-nav:hover svg,
+.auth-nav:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
 
 /*Підвал*/
 
@@ -332,6 +334,20 @@ img {
     
 }
 
+.container-features {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.icon-features {
+    margin: auto;
+}
+
 .features{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -463,9 +479,47 @@ img {
     margin-bottom: 0;
 }
 
+.social {
+    list-style: none;
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 30px;
+}
+
+.icon-social {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-social a {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.social .icon-list+.icon-list {
+    margin-left: 10px;
+}
+
+.icon-social-team {
+    fill: #AFB1B8;
+}
+
+.icon-social:hover {
+    background-color: var(--accent-color);
+}
+
+.icon-social:hover > .icon-social-team {
+    fill: var(--white-color);
+}
+
 .container-teamtext {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .team-subtitle{
@@ -486,6 +540,50 @@ img {
     font-size: 16px;
     line-height: 1.18;
 }
+
+/*Постійні кліенти*/
+
+.clients-subtitle {
+
+    padding-top: 94px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.company{
+    list-style: none;
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 30px;
+}
+
+.company .company-list+.company-list {
+    margin-left: 30px;
+}
+
+.company-link {
+    display: inline-flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-icons a {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+
 
 /*Сторінка Портфоліо*/
 
