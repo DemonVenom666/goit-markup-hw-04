@@ -242,6 +242,49 @@ img {
     margin-bottom: 9px;
 }
 
+.subtitle-footer {
+    color: var(--white-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-social {
+    list-style: none;
+    display: flex;
+}
+
+.footer-icon-social {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon-social a {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.icon-social-footer {
+    fill: var(--white-color);
+}
+
+.footer-social .footer-icon-list+.footer-icon-list {
+    margin-left: 10px;
+}
+
+.footer-icon-social:hover {
+    background-color: var(--accent-color);
+}
+
 /*Сторінка Cтудія*/
 
 /*Секція герой*/
@@ -543,9 +586,13 @@ img {
 
 /*Постійні кліенти*/
 
-.clients-subtitle {
-
+.clients {
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-subtitle {
+    margin-bottom: 50px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -559,9 +606,8 @@ img {
 .company{
     list-style: none;
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 30px;
+    padding: 0;
+    margin: 0;
 }
 
 .company .company-list+.company-list {
@@ -581,6 +627,18 @@ img {
 .company-icons a {
     display: inline-table;
     vertical-align: middle;
+}
+
+.company-link:hover {
+    border-color: var(--accent-color);
+}
+
+.company-icons {
+    fill: #AFB1B8;
+}
+
+.company-link:hover > .company-icons {
+    fill: var(--accent-color);
 }
 
 
