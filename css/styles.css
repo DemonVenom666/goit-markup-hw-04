@@ -242,6 +242,15 @@ img {
     margin-bottom: 9px;
 }
 
+.footer-list {
+    display: flex;
+    align-items: baseline;
+}
+
+.link-footer {
+    padding-left: 70px;
+}
+
 .subtitle-footer {
     color: var(--white-color);
     font-family: 'Roboto';
@@ -251,11 +260,15 @@ img {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
+    margin-bottom: 20px;
 }
 
 .footer-social {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-icon-social {
@@ -717,6 +730,15 @@ img {
     border-radius: 4px;
 }
 
+.button-portfolio-all:hover,
+.button-portfolio-all:focus {
+background-color: var(--accent-color);
+color: var(--white-color);
+
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+
 .buttons-filtr .item+.item {
     margin-left: 8px;
 }
@@ -740,6 +762,10 @@ img {
 .project-item {
     background: #FFFFFF;
     width: 370px;
+}
+
+.project-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
